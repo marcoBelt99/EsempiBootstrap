@@ -1,0 +1,63 @@
+<!-- Struttura base di una pagina bootstrap. Il sistema grafico di Bootstrap è composto da una griglia di 12 colonne, all'interno 
+    della quale posso disporre tutti gli elementi che formano una pagina. 
+    Posso mettere dei fogli CSS con formattazione preimpostata
+    per titoli, paragrafi, tabelle, bottoni, form;
+    I componenti sono elementi dinamici come barre di menu a discesa, tooltip, popup, alert, tab e gallerie per le immagini, pronti
+    all'uso, cioè senza scrivere codice JavaScript
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Incorporo il collegamento al foglio di stile ospitato sul CDN di bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Gli attributi:
+        integrity = è un valore crittografico che garantisce che il file non è stato modificato e contiene effettivamente i dati richiesti
+        crossorigin = definisce le opzioni utilizzate quando la risorsa è caricata da un server differente da quello a cui si è connessi
+            può essere "anonymous" (anonimo) oppure "use-credentials" (con controllo delle credenziali) -->
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iste beatae
+    molestias ab eum magni eveniet? Nulla deleniti ratione a neque illum eum ad
+    ab, tempora voluptatibus quam error. Eum! Lorem ipsum dolor sit amet
+    consectetur, adipisicing elit. Quasi esse animi, eum hic fuga voluptatibus
+    culpa aliquid asperiores. Eveniet, iure modi voluptates non doloribus
+    quisquam amet alias esse debitis ex. Lorem ipsum dolor sit amet, consectetur
+    adipisicing elit. Voluptatum atque dolorum, suscipit quaerat ducimus
+    facilis, quam asperiores, veniam nobis nostrum velit accusantium earum quas
+    autem. Maiores expedita impedit vitae mollitia.
+
+    <!-- Al termine della pagina, prima della chiusura del tag body, si inseriscono i link alle librerie software di:  jQuery, -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Popper (per la gestione dei popup) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- e di Javascript-->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- Secondo una modalità di uso comune nelle pagine Web, i riferimenti con il tag <script> sono inseriti nella parte
+    finale della pagina, prima della chiusura del tag </body>. In questo modo il caricamento della pagina diventa più
+    veloce , perchè il browser visualizza i contenuti senza attendere il completamento del download degli script
+-->

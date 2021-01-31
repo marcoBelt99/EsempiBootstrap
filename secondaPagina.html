@@ -1,0 +1,90 @@
+<!-- Dopo aver realizzato la struttura di base di una pagina Bootstrap, è necessario personalizzare il tipo di visualizzazione,
+     inserire titoli e meta tag e dispore i contenuti all'interno della griglia. Infine si imposta la veste grafica, chiamata
+    tema oppure template. Anche la veste grafica può essere ulteriormente personalizzata.
+    All'interno della grid system sono posizionati i contenuti, chiamati components, divisi per colonne.
+    Gli elementi di base del layout di Bootstrap sono i containers, che sono indispensabili
+    per l'organizzazione e la disposizione del sistema a griglie.
+
+    Per utilizzare il grid system, è sufficiente dichiarare la classe "container".
+    Andando ad utilizzare la classe "container-fluid", l'elemento <div> viene adattato alla dimensione del display 
+    del dispositivo che si sta utilizzando.
+-->
+
+<!-- Vi sono 4 prefissi relativi alle classi che definiscono le modalità di visualizzazione delle colonne basata sulle media query (capitolo 5 pag 255)
+     Questi prefissi stabiliscono quali sono i breakpoint, ossia la dimensione minima che provoca il cambiamento della disposizione delle colonne
+___________________________________________________________________________________________________________________________________________
+| Dimensioni in pixel       | Extra small < 576px  | Small >= 576px         | Medium >= 768px | Large >= 1200px| Extra large >= 1200px     |
+|___________________________|______________________|________________________|_________________|________________|___________________________|
+| Prefisso della classe     |       .col-          |   .col-sm              |  .col-md        | .col-lg        | .col-xl                   |  
+|___________________________|______________________|________________________|_________________|________________|___________________________|
+| Larghezza del container   |       auto           |   540px                |  720px          | 960px          |  1140px                   | 
+|___________________________|______________________|________________________|_________________|________________|___________________________|
+| Dispositivi               | smartphone con visua-| smartphone con visua-  | tablet          | laptop         | laptop e                  |
+|                           | lizzazione verticale | lizzazione orizzontale |                 |                | desktop                   | 
+|                           | (portrait)           | (landscape)            |                 |                |                           | 
+|___________________________|______________________|________________________|_________________|________________|___________________________|
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Incorporo il collegamento al foglio di stile ospitato sul CDN di bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Chiamo la classe container -->
+    <div class="container">
+      <h1>Il grid system di Bootstrap</h1>
+      <!-- Creo una struttura di 4 colonne di identica larghezza (su una riga)-->
+      <div class="row">
+        <div class="col-md-3">Prima colonna</div>
+        <div class="col-md-3">Seconda colonna</div>
+        <div class="col-md-3">Terza colonna</div>
+        <div class="col-md-3">Quarta colonna</div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- Chiamo la classe container-fluid -->
+    <div class="container-fluid">
+      <h1>Il grid system di Bootstrap chiamando la classe container-fluid</h1>
+    </div>
+
+    <!-- Al termine della pagina, prima della chiusura del tag body, si inseriscono i link alle librerie software di:  jQuery, -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Popper (per la gestione dei popup) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- e di Javascript-->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- Secondo una modalità di uso comune nelle pagine Web, i riferimenti con il tag <script> sono inseriti nella parte
+    finale della pagina, prima della chiusura del tag </body>. In questo modo il caricamento della pagina diventa più
+    veloce , perchè il browser visualizza i contenuti senza attendere il completamento del download degli script
+-->
