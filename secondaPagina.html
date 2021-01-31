@@ -10,7 +10,7 @@
     del dispositivo che si sta utilizzando.
 -->
 
-<!-- Vi sono 4 prefissi relativi alle classi che definiscono le modalità di visualizzazione delle colonne basata sulle media query (capitolo 5 pag 255)
+<!-- Ci sono 4 prefissi relativi alle classi che definiscono le modalità di visualizzazione delle colonne basata sulle media query (capitolo 5 pag 255)
      Questi prefissi stabiliscono quali sono i breakpoint, ossia la dimensione minima che provoca il cambiamento della disposizione delle colonne
 ___________________________________________________________________________________________________________________________________________
 | Dimensioni in pixel       | Extra small < 576px  | Small >= 576px         | Medium >= 768px | Large >= 1200px| Extra large >= 1200px     |
@@ -24,6 +24,12 @@ ________________________________________________________________________________
 |                           | (portrait)           | (landscape)            |                 |                |                           | 
 |___________________________|______________________|________________________|_________________|________________|___________________________|
 
+Per definire il comportamento delle colonne per dispositivi con area di visualizzazione (viewport) medium, large ed extra large basta
+impostare la classe .col-md: le visualizzazioni superiori erediteranno automaticamente lo stesso comportamento. Al contrario nei dispositivi
+small ed extra small le colonne appariranno l'una sopra l'altra.
+Il numero accanto al prefisso della classe indica la larghezza della colonna, ossia il numero degli spazi occupati dalla colonna. Poichè il numero
+massimo di colonne è 12, per riempire tutta la pagina è possibile inserire 4 colonne ciascuna con una dimensione di 3.
+Per visualizzare le colonne in modo più evidente, si può associare a ciascuna un colore di sfondo.
 -->
 
 <!DOCTYPE html>
@@ -43,12 +49,20 @@ ________________________________________________________________________________
     <!-- Chiamo la classe container -->
     <div class="container">
       <h1>Il grid system di Bootstrap</h1>
-      <!-- Creo una struttura di 4 colonne di identica larghezza (su una riga)-->
-      <div class="row">
-        <div class="col-md-3">Prima colonna</div>
-        <div class="col-md-3">Seconda colonna</div>
-        <div class="col-md-3">Terza colonna</div>
-        <div class="col-md-3">Quarta colonna</div>
+        <!-- Creo una struttura di 4 colonne di identica larghezza (su una riga)
+         di dimensione pari a 2 assegnando loro un colore
+    -->
+    <div class="row">
+        <div class="col-md-2" style="background-color: lightgreen">
+          Prima colonna
+        </div>
+        <div class="col-md-2" style="background-color: lightblue">
+          Seconda colonna
+        </div>
+        <div class="col-md-2" style="background-color: pink">Terza colonna</div>
+        <div class="col-md-2" style="background-color: violet">
+          Quarta colonna
+        </div>
       </div>
     </div>
 
@@ -56,11 +70,28 @@ ________________________________________________________________________________
     <br />
     <br />
 
-    <!-- Chiamo la classe container-fluid -->
+    <!-- Chiamo la classe container-fluid (così dispongo il contenuto in tutta la pagina) -->
     <div class="container-fluid">
       <h1>Il grid system di Bootstrap chiamando la classe container-fluid</h1>
+        <!-- Creo una struttura di 4 colonne di identica larghezza (su una riga)
+         di dimensione pari a 2 assegnando loro un colore
+    -->
+    <div class="row">
+        <div class="col-md-2" style="background-color: lightgreen">
+          Prima colonna
+        </div>
+        <div class="col-md-2" style="background-color: lightblue">
+          Seconda colonna
+        </div>
+        <div class="col-md-2" style="background-color: pink">Terza colonna</div>
+        <div class="col-md-2" style="background-color: violet">
+          Quarta colonna
+        </div>
+      </div>
     </div>
 
+  
+    <p>(provare a ridimensionare la finestra del browser, per verificare che il contenuto si adatti di conseguenza)</p>
     <!-- Al termine della pagina, prima della chiusura del tag body, si inseriscono i link alle librerie software di:  jQuery, -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
