@@ -1,0 +1,73 @@
+<!-- Come sempre, provare a ridimensionare la finestra per vedere l'effetto responsive -->
+
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <!-- Inserisco la dichiarazione della lingua, meta tag per il set di caratteri e la media query -->
+    <!-- <meta name="viewport" content="width=device-width  Impone al browser di impostare la larghezza (width) 
+         della viewport in base alla larghezza dello schermo del device utilizzato (device-width)
+    -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Marco Beltrame" />
+    <!-- Importo gli stili CSS di bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Il campionato di calcio italiano</title>
+  </head>
+  <body>
+    <!-- Le 4 colonne sono impostate con il prefisso -md- in modo da ottenere una visualizzazione affiancata
+           per i dispositivi di medie dimensioni, dai tablet ai desktop. In ciascuna colonna si indica un colore
+           di sfondo e un titolo <h2> seguito dal relativo logo
+    -->
+    <div class="container">
+      <h1>Federazione Italiana Giuco Calcio (FIGC)</h1>
+      <div class="row">
+        <div class="col-md-3" style="background-color: red">
+          <h2>SERIE A</h2>
+          <img src="serieA.png" />
+        </div>
+        <div class="col-md-3" style="background-color: green">
+          <h2>SERIE B</h2>
+          <img src="serieB.png" />
+        </div>
+        <div class="col-md-3" style="background-color: lightblue">
+          <h2>SERIE C</h2>
+          <img src="serieC.png" />
+        </div>
+        <div class="col-md-3" style="background-color: yellow">
+          <h2>SERIE D</h2>
+          <img src="serieD.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Al termine della pagina, prima della chiusura del tag body, si inseriscono i link alle librerie software di:  jQuery, -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Popper (per la gestione dei popup) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- e di Javascript-->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

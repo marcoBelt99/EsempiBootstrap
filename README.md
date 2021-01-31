@@ -5,3 +5,4 @@ Ogni pagina è abbondantemente per capire i concetti di bootstrap. Seguire nell'
 
 - primaPagina
 - secondaPagina
+- figc.html
