@@ -1,0 +1,149 @@
+<!-- IMMAGINI: usando il tab <img> l'immagine viene visualizzata correttamente, ma ridimensionando la pagina l'immagine mantiene le stesse
+               dimensioni e viene quindi tagliata. 
+      - Il problema si risolve associando all'immagine la classe: img-fluid
+      - La classe: rounded, associata alle immagini, consente di ottenere gli angoli arrotondati;
+        per arrotondare gli angoli solo in alto, basta aggiungere top al nome della classe, es) <img scr="fotografia.jpg" class="rounded-top">
+        per avere immagini circolari si deve aggiungere circle. Se l'immagine originale è rettangolare si ottiene un effetto ovale, mentre se è
+        quadrata l'effetto è di un'immagine a forma di cerchio
+      - La classe img-thumbnail assegna all'immagine un bordo arrotondato di 1 pixel
+
+      VIDEO: Per inserire un contenuto video può essere utilizzato il tag <iframe> associato alla classe embed-responsive-item e alla sorgente (src) 
+             del contenuto. Il tutto deve essere inserito in un <div> a cui associare la classe embed-responsive, nonchè l'aspect ration
+             del video da visualizzare (16:9 o 4:3) oppure embed-responsive-4by3
+             La classe embed-responsive può essere utilizzata anche con i tag <video>, <object> ed <embed>
+             Per inserire un video da YouTube è necessario effettuare una modifica all'URL del video:
+             nell'indirizzo iniziale la stringa watch?v= deve essere sostituita con embed
+  -->
+
+<!-- Esercizio: Creare una pagina Web con una tabella di confronto contenente le caratteristiche di alcuni modelli di macchine fotografiche -->
+<!-- Esercizio (continua): Aggiungere le immagini degli apparecchi fotografici alla tabella relativa al confronto tra diverse macchine
+     (Le aggiungo subito sotto il tbody) -->
+<!-- Esercizio (continua): Aggiungere un video -->
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <!-- Incorporo il collegamento al foglio di stile ospitato sul CDN di bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="La fotografica digitale" />
+    <meta name="author" content="Marco Beltrame" />
+
+    <title>Fotocamere a confronto</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fotocamere a confronto</h1>
+      <table class="table table-striped table-dark table-bordered">
+        <!-- Intestazione tabella -->
+        <thead class="table-primary">
+          <tr>
+            <th></th>
+            <th>100A</th>
+            <th>200B</th>
+            <th>300C</th>
+          </tr>
+        </thead>
+        <!-- Corpo tabella -->
+        <tbody>
+          <tr>
+            <td></td>
+            <td>
+              <img src="alpha.png" class="img-fluid" alt="Fotocamera Alpha" />
+            </td>
+            <td>
+              <img src="beta.png" class="img-fluid" alt="Fotocamera Beta" />
+            </td>
+            <td><img src="gamma.png" class="img-fluid" alt="Gamma Alpha" /></td>
+          </tr>
+          <tr>
+            <td>Produttore</td>
+            <td>Alpha</td>
+            <td>Beta</td>
+            <td>Gamma</td>
+          </tr>
+          <tr>
+            <td>Tipologia</td>
+            <td>DSLR Entry Level</td>
+            <td>DSLR Amatoriale</td>
+            <td>DSLR</td>
+          </tr>
+          <tr>
+            <td>Sul mercato da</td>
+            <td>Giugno 2018</td>
+            <td>Maggio 2018</td>
+            <td>Giugno 2018</td>
+          </tr>
+          <tr>
+            <td>Formati immagine</td>
+            <td>JPEG, RAW</td>
+            <td>JPEG, RAW</td>
+            <td>JPEG, RAW</td>
+          </tr>
+          <tr>
+            <td>Formati video</td>
+            <td>n.d</td>
+            <td>MJPEG</td>
+            <td>n.d</td>
+          </tr>
+          <tr>
+            <td>Microfono interno</td>
+            <td>n.d</td>
+            <td>Mono</td>
+            <td>n.d</td>
+          </tr>
+          <tr>
+            <td>Alimentazione</td>
+            <td>Batteria LP-E5</td>
+            <td>Batteria EN-EL9a</td>
+            <td>Batteria NP-FH50</td>
+          </tr>
+          <tr>
+            <td>Peso pronto all'uso</td>
+            <td>502</td>
+            <td>590</td>
+            <td>456</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Corso di fotografia</h2>
+      <!-- Aggiungo il video -->
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/IWBuny5g0yM"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Al termine della pagina, prima della chiusura del tag body, si inseriscono i link alle librerie software di:  jQuery, -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Popper (per la gestione dei popup) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- e di Javascript-->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
