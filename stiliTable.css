@@ -1,0 +1,15 @@
+/* File CSS da includere in table.html
+   Server perchè, dato che posso voler modificare un qualche proprietà di un elemento,
+   questo lo posso fare in maniera specifica usando istruzioni CSS.
+*/
+
+
+/* Cambio lo spessore, ed il colore del bordo */
+.table-bordered {
+    border: 1px solid #DDDDDD;
+}
+
+/* Personalizzo il colore di sfondo dell'hover */
+.table-hover tbody tr:hover {
+    background-color: #A5F5A5;
+}
