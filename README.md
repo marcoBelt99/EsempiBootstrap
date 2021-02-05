@@ -12,3 +12,5 @@ Ogni pagina è abbondantemente commentata per comprendere i concetti di bootstra
 - [table.html](https://github.com/marcoBelt99/EsempiBootstrap/blob/master/table.html) (con gli stili in [stiliTable.css](https://github.com/marcoBelt99/EsempiBootstrap/blob/master/stiliTable.css)) In cui vedo come funzionano le tabelle
 
 - [fotocamere.html](https://github.com/marcoBelt99/EsempiBootstrap/blob/master/fotocamere.html) In cui parlo delle immagini e dei video
+
+- [barraDiNavigazione.html](https://github.com/marcoBelt99/EsempiBootstrap/blob/master/barraDiNavigazione.html) In cui parlo di come usare una sempice barra di navigazione e le classi da usare
