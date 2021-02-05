@@ -1,7 +1,9 @@
 # EsempiBootstrap
 
 Questo repository può tornarmi utile per capire come applicare ed usare bootstrap.
-Ogni pagina è abbondantemente commentata per comprendere i concetti di bootstrap. Seguire nell'ordine:
+Ogni pagina è abbondantemente commentata per comprendere i concetti di bootstrap.
+** Ricorda, è consigliato usare Chrome ** 
+Seguire nell'ordine:
 
 - [primaPagina](https://github.com/marcoBelt99/EsempiBootstrap/blob/master/primaPagina.html) In cui introduco bootstrap 4
 
